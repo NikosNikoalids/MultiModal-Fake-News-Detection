@@ -55,6 +55,8 @@ For the images we fine tune pytorch's Resnet18 model.
 The accuracy after the tuning increases from 44.4% to 75%.
 ## Multi-modal
 
+Scripts: MultiModal.py
+
 To integrate the fine-tuned models, we employ a Mixture-Of-Experts architecture. During the training phase, we adopt a strategy where the BERT and ResNet models are frozen, and the optimization process exclusively targets the parameters of the Mixture-Of-Experts component.
 
 The final accuracy after 10 epochs is 97.2%.
